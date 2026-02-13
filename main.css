@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFB6C1;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;    
+}
+
+p {
+    margin-top: 20px;
+}
+
+img {
+    margin-top: 40px;
+    box-shadow:
+        0 -8.8px 10.1px rgba(0, 0, 0, 0.087),
+        0 -5.5px 24.3px rgba(0, 0, 0, 0.094),
+        0 3.8px 45.7px rgba(0, 0, 0, 0.092),
+        0 16.5px 81.5px rgba(0, 0, 0, 0.087),
+        0 31px 152.5px rgba(0, 0, 0, 0.079),
+        0 46px 365px rgba(0, 0, 0, 0.07)
+        ;
+    border-radius: 10px;
+    transform: rotate(-5deg);
+}
+
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;             
+}
+
+.content {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow:
+        0 -8.8px 10.1px rgba(0, 0, 0, 0.087),
+        0 -5.5px 24.3px rgba(0, 0, 0, 0.094),
+        0 3.8px 45.7px rgba(0, 0, 0, 0.092),
+        0 16.5px 81.5px rgba(0, 0, 0, 0.087),
+        0 31px 152.5px rgba(0, 0, 0, 0.079),
+        0 46px 365px rgba(0, 0, 0, 0.07)
+        ;
+}
+
+
+
+.heart {
+    position: fixed;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.4);
+    user-select: none;
+    pointer-events: none;
+    z-index: 0;
+    animation: float 6s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+}
+
+
+.heart:nth-child(1) { bottom: 10%; left: 5%; animation-delay: 0s; }
+.heart:nth-child(2) { top: 15%; right: 8%; animation-delay: 1s; font-size: 24px; }
+.heart:nth-child(3) { bottom: 20%; right: 15%; animation-delay: 2s; font-size: 18px; }
+.heart:nth-child(4) { top: 25%; left: 10%; animation-delay: 0.5s; font-size: 22px; }
+.heart:nth-child(5) { bottom: 30%; left: 20%; animation-delay: 1.5s; font-size: 16px; }
+.heart:nth-child(6) { top: 40%; right: 20%; animation-delay: 2.5s; font-size: 20px; }
+.heart:nth-child(7) { bottom: 15%; right: 30%; animation-delay: 0.8s; font-size: 19px; }
+.heart:nth-child(8) { top: 60%; left: 15%; animation-delay: 1.8s; font-size: 21px; }
+.heart:nth-child(9) { bottom: 40%; left: 30%; animation-delay: 2.2s; font-size: 17px; }
+.heart:nth-child(10) { top: 70%; right: 12%; animation-delay: 0.3s; font-size: 23px; }
