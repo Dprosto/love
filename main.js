@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Имитация перехода
             setTimeout(() => {
-                window.location.href = '/index.html';
+                window.location.href = '/love.html';
             }, 500);
         }
     });
